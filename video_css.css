@@ -1,0 +1,9 @@
+.banner{
+    position: relative;
+}
+
+.banner video{
+    position: absolute;
+    min-width: 100%;
+
+}

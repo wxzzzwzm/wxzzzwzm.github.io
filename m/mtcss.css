@@ -1,0 +1,33 @@
+<style type="text/css">
+
+	.menu1
+	{
+
+	}
+
+	.things h1
+	{
+		display: block;
+		font-size: 40px;
+		text-align: center;
+		text-decoration: none;
+		color: #000;
+	}
+	.things h2
+	{
+		font-size: 30px;
+		text-align: center;
+		text-decoration: none;
+		color: #000;
+	}
+	.things a
+	{
+		display: block;
+		font-size: 50px;
+		text-align: center;
+		text-decoration: none;
+		color: #000;
+		border-style: solid;
+		border-width: 1px;
+	}
+

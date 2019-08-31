@@ -1,0 +1,65 @@
+<style type="text/css">
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.5)" /> 
+	ul.fuck {list-style-type: none}
+	<base target="_blank" />
+	<meta charset="gbk"/>
+	a {text-decoration: none}
+
+	body,ul,li,a
+	{
+		padding: 0;
+		margin: 0;
+	}
+	body
+	{
+		background-color:#e6e6e6;
+		color: #000000; 
+	}
+	.menu
+	{
+		font-size: 20;
+		padding: 0;
+		height: 100px;
+		padding-left: 1%;
+		background-color: #00a2ca;
+	}
+	.menubar
+	{
+		margin: 0 auto;
+		position: absolute;
+		list-style-type: none;
+		width: 80%;
+		overflow-y: auto;
+	}
+ 
+	.menubar li
+	{
+		padding:0px 50px;
+		display:inline-block;
+		cursor: pointer;
+		line-height: 100px;		
+	}
+	.menubar li:hover
+	{
+	background-color:#009bc2;
+	}
+	.menubar li.menu-value
+	{
+		background-color: #0095bb;	
+	}
+
+ 	.menubar li.my
+	{
+		float:right
+	}
+
+	.menubar a
+	{
+		display: block;
+		height:100px;
+		font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体" ;
+		font-size: 25px;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+</script>
