@@ -3,6 +3,6 @@ try{
 <!--        window.location.href="/m";-->
 
     }else{
-        window.location.href="http://www.wxzzzwzm.cn/";
+        window.location.href="https://wxzzzwzm.cn/";
     }
 }catch(e){}
