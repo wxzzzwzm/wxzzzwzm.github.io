@@ -1,0 +1,4 @@
+open 47.52.36.243
+s0705548
+zoZE82jxWJ
+put test.mp4
