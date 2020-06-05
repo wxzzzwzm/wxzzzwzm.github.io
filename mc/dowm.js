@@ -1,4 +1,4 @@
 function mc()  
 {  
-	alert("´æµµ´íÎó£¡ÕýÔÚÇÀÐÞ£¡");<!--window.location.href="world.7z";-->
+	alert("å­˜æ¡£é”™è¯¯ï¼æ­£åœ¨æŠ¢ä¿®ï¼");<!--window.location.href="world.7z";-->
 }
