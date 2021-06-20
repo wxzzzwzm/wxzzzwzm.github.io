@@ -40,7 +40,6 @@
 
         body {
             SCROLLBAR-DARKSHADOW-COLOR: #ffff00;
-            background: #7dc2f6 url("https://api.ixiaowai.cn/api/api.php") center center; /*背景图片*/
             background-repeat: no-repeat;
             background-size: cover;
             transition: 0.5s;
@@ -48,6 +47,18 @@
             position: relative;
             animation-duration: 3s;
             filter: blur(0px);
+        }
+        /*手机*/
+        @media only screen and (max-width:600px) {
+            body {
+                background: #7dc2f6 url("https://yingciyuan.cn/pe.php") center center; /*背景图片*/
+            }
+        }
+        /*电脑*/
+        @media only screen and (min-width:600px) {
+            body {
+                background: #7dc2f6 url("https://api.ixiaowai.cn/api/api.php") center center; /*背景图片*/
+            }
         }
         @keyframes 背景图片{
             0% {
@@ -61,7 +72,6 @@
                 background-position: center center;
             }
         }
-
         .ityped-cursor {
             font-size: 1.75rem;
             opacity: 1;
