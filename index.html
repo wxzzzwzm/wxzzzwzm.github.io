@@ -39,25 +39,33 @@
         }
 
         body {
-            SCROLLBAR-DARKSHADOW-COLOR: #ffff00;
-            background-repeat: no-repeat;
-            background-size: cover;
-            transition: 0.5s;
-            animation-name: 背景图片;
-            position: relative;
-            animation-duration: 3s;
-            filter: blur(0px);
-        }
+            }
         /*手机*/
-        @media only screen and (max-width:600px) {
+        @media only screen and (max-width:992px) {
             body {
                 background: #7dc2f6 url("https://yingciyuan.cn/pe.php") center center; /*背景图片*/
+                SCROLLBAR-DARKSHADOW-COLOR: #ffff00;
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: 0.5s;
+                animation-name: 背景图片;
+                position: relative;
+                animation-duration: 3s;
+                filter: blur(0px);
             }
         }
         /*电脑*/
-        @media only screen and (min-width:600px) {
+        @media only screen and (min-width:992px) {
             body {
                 background: #7dc2f6 url("https://api.ixiaowai.cn/api/api.php") center center; /*背景图片*/
+                SCROLLBAR-DARKSHADOW-COLOR: #ffff00;
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: 0.5s;
+                animation-name: 背景图片;
+                position: relative;
+                animation-duration: 3s;
+                filter: blur(0px);
             }
         }
         @keyframes 背景图片{
@@ -65,7 +73,7 @@
                 background-position: 0% center;
                 filter: blur(10px);
             }
-            50% {
+            35% {
                 filter: blur(0px);
             }
             100% {
