@@ -4,37 +4,147 @@
 
 //-->
 <html>
-<title>无形之中最为致命的小网站</title>
-<link rel="icon" href="ico.ico" type="img/x-ico" />
-<style>
-p{text-align:center;font-size:80px;color:#66ccff} 
-a{color:#ffffff} 
-       }
-</script>
-</style>
-<body>
-<script type="text/javascript" src="phone.js"></script>
-<!--下面是标题自动改，上面测试自动跳转-->
-<script type="text/javascript">
-{
-setTimeout(function(){document.title="这个网页还在测试=w=";},3000);
-setTimeout(function(){document.title="本人技术也不好 - -";},5000);
-setTimeout(function(){document.title="就这样吧~";},7000);
-setTimeout(function(){document.title="主页";},9000);
-}
-</script>
-<!--上面是标题自动改-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无中𝙗𝙡𝙤𝙜</title>
+	<link rel="icon" href="ico.ico" type="img/x-ico" />
+	<style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: #000;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #7dc2f6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #1b99f7;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+            background-color: #b9e0fd;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background-color: #018ef8;
+        }
+        html, body {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            SCROLLBAR-DARKSHADOW-COLOR: #ffff00;
+            background: #7dc2f6 url("https://api.ixiaowai.cn/api/api.php") center center; /*背景图片*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.5s;
+            animation-name: 背景图片;
+            position: relative;
+            animation-duration: 3s;
+            filter: blur(0px);
+        }
+        @keyframes 背景图片{
+            0% {
+                background-position: 0% center;
+                filter: blur(10px);
+            }
+            50% {
+                filter: blur(0px);
+            }
+            100% {
+                background-position: center center;
+            }
+        }
+
+        .ityped-cursor {
+            font-size: 1.75rem;
+            opacity: 1;
+            -webkit-animation: blink 0.3s infinite;
+            -moz-animation: blink 0.3s infinite;
+            animation: blink 0.3s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes blink {
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes blink {
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @-moz-keyframes blink {
+            100% {
+                opacity: 0;
+            }
+        }
+        .主页{
+            width:100%;
+            height:100%;
+            background-color:#ffffff50;
+        }
+        .底栏{
+            width:100%;
+            height:20%;
+            text-align:center;
+            background-color:#808080
+        }
+        .主页文字 {
+            /*transform: translate(30%,50%) scale(1.5,1.5);*/
+            color: aqua;
+            text-shadow: 4px 4px 4px rgb(0 151 151 / 0.75);
+            padding: 10px;
+            margin: 0px;
+        }
+        .内容 {
+            width: 100%;
+            height: 110%;
+        }
+	</style>
+    <script src="../ityped.js" type="text/javascript"></script>
+</head>
+<body onload="加载()">
+    <div class="主页">
+        <h2 class="主页文字" style="font-size: 5em;">你好！</h2>
+        <h1 class="主页文字" style="font-size: 3.75em;">我是wxzzzwzm。</h1>
+        <p class="主页文字" style="color:black;font-size: 1.75em;">
+            我现在正在学习<span id="介绍"></span>。
+            <br />
+            希望能有更多好东西献给你。
+        </p>
+    </div>
+    <div class="内容" style="background-color: antiquewhite;">
+
+    </div>
+    <div class="底栏">
+        <a href="https://beian.miit.gov.cn">粤ICP备2021082073号-1</a>
+        <h1 class="主页文字" style="transform: scale(1,1);">网站还在建设！将来或许会有更多内容~</h1>
+    </div>
+    <script type="text/javascript">
+
+        ityped.init('#介绍', {
+            strings: ['html', 'css', 'java', 'php', 'js'],
+            startDelay: 1000,
+            loop: true
+        });
+
+        function 加载() {
+            setTimeout(function () { document.title = "这个网站还在测试=w="; }, 3000);
+            setTimeout(function () { document.title = "本人技术也不好 - -"; }, 5000);
+            setTimeout(function () { document.title = "就这样吧~"; }, 7000);
+            setTimeout(function () { document.title = "主页"; }, 9000);
+        }
+
+    </script>
 </body>
-	<head>
-	<link rel="stylesheet" href="homecss.css" type="text/css" />
-	<div class="menu">
-	<ul class="menubar">
-	</ul>
-	</div>	
-	<div class="home">
-	<p><br>等备案，先维护一下~<br><br><br><br></p>
-
-	</div>
-
-	</head>
 </html>
