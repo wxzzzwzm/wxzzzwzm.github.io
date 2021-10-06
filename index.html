@@ -5,10 +5,11 @@
 //-->
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>无中𝙗𝙡𝙤𝙜</title>
-	<link rel="icon" href="ico.ico" type="img/x-ico" />
-	<style>
+    <script type="text/javascript" src="//dl.wxzzzwzm.cn/js/jquery.js"></script>
+    <link rel="icon" href="ico.ico" type="img/x-ico" />
+    <style>
         ::-webkit-scrollbar {
             width: 10px;
             background-color: #000;
@@ -32,6 +33,7 @@
         ::-webkit-scrollbar-corner {
             background-color: #018ef8;
         }
+
         html, body {
             height: 100%;
             padding: 0px;
@@ -39,7 +41,7 @@
         }
 
         body {
-            }
+        }
         /*手机*/
         @media only screen and (max-width:992px) {
             body {
@@ -68,18 +70,22 @@
                 filter: blur(0px);
             }
         }
-        @keyframes 背景图片{
+
+        @keyframes 背景图片 {
             0% {
                 background-position: 0% center;
                 filter: blur(10px);
             }
+
             35% {
                 filter: blur(0px);
             }
+
             100% {
                 background-position: center center;
             }
         }
+
         .ityped-cursor {
             font-size: 1.75rem;
             opacity: 1;
@@ -106,17 +112,20 @@
                 opacity: 0;
             }
         }
-        .主页{
-            width:100%;
-            height:100%;
-            background-color:#ffffff50;
+
+        #主页 {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff50;
         }
-        .底栏{
-            width:100%;
-            height:20%;
-            text-align:center;
-            background-color:#808080
+
+        .底栏 {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            background-color: #808080
         }
+
         .主页文字 {
             /*transform: translate(30%,50%) scale(1.5,1.5);*/
             color: aqua;
@@ -124,15 +133,445 @@
             padding: 10px;
             margin: 0px;
         }
+
         .内容 {
             width: 100%;
             height: 110%;
         }
-	</style>
+
+        #过渡 {
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            width: 100%;
+            height: auto;
+            min-height:10%;
+            text-align: center;
+            background-color: #7dc2f6;
+        }
+
+        #我 {
+            zoom: 0.9;
+            background-repeat: no-repeat;
+            background-image: url('//dl.wxzzzwzm.cn/img/wxzzzwzm.png');
+            width: 100%;
+            height: 100%;
+            transform: translateY(-0px);
+            animation: 动画 100s steps(1);
+            animation-play-state: paused;
+            max-height: 50%;
+        }
+
+        @keyframes 动画 {
+            0% {
+                background-position: 0px 0px;
+            }
+
+            1.00% {
+                background-position: -1400px 0px;
+            }
+
+            2.00% {
+                background-position: -2800px 0px;
+            }
+
+            3.00% {
+                background-position: 0px -300px;
+            }
+
+            4.00% {
+                background-position: -1400px -300px;
+            }
+
+            5.00% {
+                background-position: -2800px -300px;
+            }
+
+            6.00% {
+                background-position: 0px -600px;
+            }
+
+            7.00% {
+                background-position: -1400px -600px;
+            }
+
+            8.00% {
+                background-position: -2800px -600px;
+            }
+
+            9.00% {
+                background-position: 0px -900px;
+            }
+
+            10.00% {
+                background-position: -1400px -900px;
+            }
+
+            11.00% {
+                background-position: -2800px -900px;
+            }
+
+            12.00% {
+                background-position: 0px -1200px;
+            }
+
+            13.00% {
+                background-position: -1400px -1200px;
+            }
+
+            14.00% {
+                background-position: -2800px -1200px;
+            }
+
+            15.00% {
+                background-position: 0px -1500px;
+            }
+
+            16.00% {
+                background-position: -1400px -1500px;
+            }
+
+            17.00% {
+                background-position: -2800px -1500px;
+            }
+
+            18.00% {
+                background-position: 0px -1800px;
+            }
+
+            19.00% {
+                background-position: -1400px -1800px;
+            }
+
+            20.00% {
+                background-position: -2800px -1800px;
+            }
+
+            21.00% {
+                background-position: 0px -2100px;
+            }
+
+            22.00% {
+                background-position: -1400px -2100px;
+            }
+
+            23.00% {
+                background-position: -2800px -2100px;
+            }
+
+            24.00% {
+                background-position: 0px -2400px;
+            }
+
+            25.00% {
+                background-position: -1400px -2400px;
+            }
+
+            26.00% {
+                background-position: -2800px -2400px;
+            }
+
+            27.00% {
+                background-position: 0px -2700px;
+            }
+
+            28.00% {
+                background-position: -1400px -2700px;
+            }
+
+            29.00% {
+                background-position: -2800px -2700px;
+            }
+
+            30.00% {
+                background-position: 0px -3000px;
+            }
+
+            31.00% {
+                background-position: -1400px -3000px;
+            }
+
+            32.00% {
+                background-position: -2800px -3000px;
+            }
+
+            33.00% {
+                background-position: 0px -3300px;
+            }
+
+            34.00% {
+                background-position: -1400px -3300px;
+            }
+
+            35.00% {
+                background-position: -2800px -3300px;
+            }
+
+            36.00% {
+                background-position: 0px -3600px;
+            }
+
+            37.00% {
+                background-position: -1400px -3600px;
+            }
+
+            38.00% {
+                background-position: -2800px -3600px;
+            }
+
+            39.00% {
+                background-position: 0px -3900px;
+            }
+
+            40.00% {
+                background-position: -1400px -3900px;
+            }
+
+            41.00% {
+                background-position: -2800px -3900px;
+            }
+
+            42.00% {
+                background-position: 0px -4200px;
+            }
+
+            43.00% {
+                background-position: -1400px -4200px;
+            }
+
+            44.00% {
+                background-position: -2800px -4200px;
+            }
+
+            45.00% {
+                background-position: 0px -4500px;
+            }
+
+            46.00% {
+                background-position: -1400px -4500px;
+            }
+
+            47.00% {
+                background-position: -2800px -4500px;
+            }
+
+            48.00% {
+                background-position: 0px -4800px;
+            }
+
+            49.00% {
+                background-position: -1400px -4800px;
+            }
+
+            50.00% {
+                background-position: -2800px -4800px;
+            }
+
+            51.00% {
+                background-position: 0px -5100px;
+            }
+
+            52.00% {
+                background-position: -1400px -5100px;
+            }
+
+            53.00% {
+                background-position: -2800px -5100px;
+            }
+
+            54.00% {
+                background-position: 0px -5400px;
+            }
+
+            55.00% {
+                background-position: -1400px -5400px;
+            }
+
+            56.00% {
+                background-position: -2800px -5400px;
+            }
+
+            57.00% {
+                background-position: 0px -5700px;
+            }
+
+            58.00% {
+                background-position: -1400px -5700px;
+            }
+
+            59.00% {
+                background-position: -2800px -5700px;
+            }
+
+            60.00% {
+                background-position: 0px -6000px;
+            }
+
+            61.00% {
+                background-position: -1400px -6000px;
+            }
+
+            62.00% {
+                background-position: -2800px -6000px;
+            }
+
+            63.00% {
+                background-position: 0px -6300px;
+            }
+
+            64.00% {
+                background-position: -1400px -6300px;
+            }
+
+            65.00% {
+                background-position: -2800px -6300px;
+            }
+
+            66.00% {
+                background-position: 0px -6600px;
+            }
+
+            67.00% {
+                background-position: -1400px -6600px;
+            }
+
+            68.00% {
+                background-position: -2800px -6600px;
+            }
+
+            69.00% {
+                background-position: 0px -6900px;
+            }
+
+            70.00% {
+                background-position: -1400px -6900px;
+            }
+
+            71.00% {
+                background-position: -2800px -6900px;
+            }
+
+            72.00% {
+                background-position: 0px -7200px;
+            }
+
+            73.00% {
+                background-position: -1400px -7200px;
+            }
+
+            74.00% {
+                background-position: -2800px -7200px;
+            }
+
+            75.00% {
+                background-position: 0px -7500px;
+            }
+
+            76.00% {
+                background-position: -1400px -7500px;
+            }
+
+            77.00% {
+                background-position: -2800px -7500px;
+            }
+
+            78.00% {
+                background-position: 0px -7800px;
+            }
+
+            79.00% {
+                background-position: -1400px -7800px;
+            }
+
+            80.00% {
+                background-position: -2800px -7800px;
+            }
+
+            81.00% {
+                background-position: 0px -8100px;
+            }
+
+            82.00% {
+                background-position: -1400px -8100px;
+            }
+
+            83.00% {
+                background-position: -2800px -8100px;
+            }
+
+            84.00% {
+                background-position: 0px -8400px;
+            }
+
+            85.00% {
+                background-position: -1400px -8400px;
+            }
+
+            86.00% {
+                background-position: -2800px -8400px;
+            }
+
+            87.00% {
+                background-position: 0px -8700px;
+            }
+
+            88.00% {
+                background-position: -1400px -8700px;
+            }
+
+            89.00% {
+                background-position: -2800px -8700px;
+            }
+
+            90.00% {
+                background-position: 0px -9000px;
+            }
+
+            91.00% {
+                background-position: -1400px -9000px;
+            }
+
+            92.00% {
+                background-position: -2800px -9000px;
+            }
+
+            93.00% {
+                background-position: 0px -9300px;
+            }
+
+            94.00% {
+                background-position: -1400px -9300px;
+            }
+
+            95.00% {
+                background-position: -2800px -9300px;
+            }
+
+            96.00% {
+                background-position: 0px -9600px;
+            }
+
+            97.00% {
+                background-position: -1400px -9600px;
+            }
+
+            98.00% {
+                background-position: -2800px -9600px;
+            }
+
+            99.00% {
+                background-position: 0px -9900px;
+            }
+
+            100.00% {
+                background-position: -1400px -9900px;
+            }
+        }
+    </style>
     <script src="../ityped.js" type="text/javascript"></script>
 </head>
 <body onload="加载()">
-    <div class="主页">
+    <div id="主页">
         <h2 class="主页文字" style="font-size: 5em;">你好！</h2>
         <h1 class="主页文字" style="font-size: 3.75em;">我是wxzzzwzm。</h1>
         <p class="主页文字" style="color:black;font-size: 1.75em;">
@@ -141,12 +580,14 @@
             希望能有更多好东西献给你。
         </p>
     </div>
+    <div id="过渡"><img id="我"/></div>
     <div class="内容" style="background-color: antiquewhite;">
 
     </div>
     <div class="底栏">
-        <a href="https://beian.miit.gov.cn">粤ICP备2021082073号-1</a>
+        <a href="https://beian.miit.gov.cn">粤ICP备2021082073号</a>
         <h1 class="主页文字" style="transform: scale(1,1);">网站还在建设！将来或许会有更多内容~</h1>
+        <p>备案有问题所以cmane到GitHub，原ip为119.29.56.46</p>
     </div>
     <script type="text/javascript">
 
@@ -156,13 +597,36 @@
             loop: true
         });
 
+        window.onresize = function () {
+            图片倍数();
+        }
         function 加载() {
             setTimeout(function () { document.title = "这个网站还在测试=w="; }, 3000);
             setTimeout(function () { document.title = "本人技术也不好 - -"; }, 5000);
             setTimeout(function () { document.title = "就这样吧~"; }, 7000);
             setTimeout(function () { document.title = "主页"; }, 9000);
+            图片倍数();
         }
-
+        function 图片倍数() {
+            var 放大倍数 = document.documentElement.clientWidth / 1400;
+            if (放大倍数 > 0) {
+                $("#我").css("zoom", 放大倍数);
+                $("#我").css("height", 300 + "px");
+            }
+        }
+        var 滑动 = document.getElementById('主页').offsetHeight;
+        $(window).scroll(function () {
+            //为了保证兼容性，这里取两个值，哪个有值取哪一个
+            //scrollTop就是触发滚轮事件时滚轮的高度
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            $("#过渡").css("transform", "translateY(-" + 100 * (scrollTop / 滑动) + "%)");
+            动画时间 = -25 + Math.round(175 * (scrollTop / 滑动));
+            if (动画时间 <= 99) {
+                $("#我").css("animation-delay", "-" + 动画时间 + "s");
+            } else {
+                $("#我").css("animation-delay", "-" + 99 + "s");
+            }
+        })
     </script>
 </body>
 </html>
