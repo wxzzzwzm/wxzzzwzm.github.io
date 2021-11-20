@@ -136,7 +136,7 @@
 
         .内容 {
             width: 100%;
-            height: 110%;
+            height: 100%;
         }
 
         #过渡 {
@@ -151,15 +151,14 @@
         }
 
         #我 {
-            zoom: 0.9;
             background-repeat: no-repeat;
             background-image: url('//dl.wxzzzwzm.cn/img/wxzzzwzm.png');
-            width: 100%;
-            height: 100%;
-            transform: translateY(-0px);
+            height: 300px;
+            transform: translateX(0);
             animation: 动画 100s steps(1);
             animation-play-state: paused;
             max-height: 50%;
+            border:none;
         }
 
         @keyframes 动画 {
@@ -580,17 +579,16 @@
             希望能有更多好东西献给你。
         </p>
     </div>
-    <div id="过渡"><img id="我"/></div>
+    <div id="过渡"><div id="我" ></div></div>
     <div class="内容" style="background-color: antiquewhite;">
 
     </div>
     <div class="底栏">
         <a href="https://beian.miit.gov.cn">粤ICP备2021082073号</a>
         <h1 class="主页文字" style="transform: scale(1,1);">网站还在建设！将来或许会有更多内容~</h1>
-        <p>备案有问题所以cmane到GitHub，原ip为119.29.56.46</p>
+        <p style="display:none;">备案有问题所以cmane到GitHub，原ip为119.29.56.46</p>
     </div>
     <script type="text/javascript">
-
         ityped.init('#介绍', {
             strings: ['html', 'css', 'java', 'php', 'js'],
             startDelay: 1000,
@@ -609,18 +607,25 @@
         }
         function 图片倍数() {
             var 放大倍数 = document.documentElement.clientWidth / 1400;
-            if (放大倍数 > 0) {
+            if (放大倍数 > 0.8) {
+                var 偏移值 = document.documentElement.clientWidth - 1080;
+                偏移值 = 偏移值/2;
+                $("#我").css("zoom", 0.8);
+                $("#我").css("width", 1350 + "px");
+                $("#我").css("transform", "translateX(" + 偏移值 + "px)");
+
+            } else if (放大倍数 > 0) {
                 $("#我").css("zoom", 放大倍数);
-                $("#我").css("height", 300 + "px");
+                $("#我").css("transform", "translateX(0px)");
             }
         }
-        var 滑动 = document.getElementById('主页').offsetHeight;
         $(window).scroll(function () {
+            var 滑动距离 = document.documentElement.scrollTop || document.body.scrollTop;
+            var 滑动 = document.getElementById('主页').offsetHeight;
             //为了保证兼容性，这里取两个值，哪个有值取哪一个
             //scrollTop就是触发滚轮事件时滚轮的高度
-            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            $("#过渡").css("transform", "translateY(-" + 100 * (scrollTop / 滑动) + "%)");
-            动画时间 = -25 + Math.round(175 * (scrollTop / 滑动));
+            $("#过渡").css("transform", "translateY(-" + 100 * (滑动距离 / 滑动) + "%)");
+            动画时间 = -25 + Math.round(175 * (滑动距离 / 滑动));
             if (动画时间 <= 99) {
                 $("#我").css("animation-delay", "-" + 动画时间 + "s");
             } else {
